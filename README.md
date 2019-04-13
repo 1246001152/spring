@@ -5,4 +5,4 @@ SpringIoC的Bean管理
     使用p命名空间进行更简洁的XML配置(加配置 xmlns:p="http://www.springframework.org/schema/p")   
     bean注入
     内部bean注入
-    
+    注入null

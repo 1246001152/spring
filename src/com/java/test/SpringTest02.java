@@ -15,5 +15,8 @@ public class SpringTest02 {
 //        内部bean注入
         User user4 = applicationContext.getBean("user4", User.class);
         System.out.println(user4.getRole().getName());
+//        注入null
+        User user5 = applicationContext.getBean("user5", User.class);
+        System.out.println(user5.getRole());
     }
 }

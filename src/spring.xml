@@ -31,5 +31,12 @@
             </bean>
         </property>
     </bean>
+    <!--注入null-->
+    <bean id="user5" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="role" >
+            <null></null>
+        </property>
+    </bean>
 
 </beans>
