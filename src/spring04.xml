@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd"
+        default-autowire="byName">
+
+    <bean id="role" class="com.java.entity.Role">
+        <property name="name" value="管理员"></property>
+    </bean>
+    <bean id="role1" class="com.java.entity.Role">
+        <property name="name" value="经理"></property>
+    </bean>
+    <!-- scope="singleton"单例  scope="prototype"多例  -->
+    <bean id="user" class="com.java.entity.User" >
+        <property name="id" value="1"></property>
+        <property name="username" value="zhangsan"></property>
+        <property name="password" value="111"></property>
+        <!-- 方法注入 -->
+        <lookup-method name="getRole" bean="role"></lookup-method>
+    </bean>
+
+</beans>

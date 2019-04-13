@@ -1,14 +1,15 @@
 package com.java.entity;
 
-public class User {
+public abstract class User {
     private Integer id;
     private String username;
     private String password;
     private Role role;
 
-    public Role getRole() {
-        return role;
-    }
+//    public Role getRole() {
+//        return role;
+//    }
+    public abstract Role getRole();
 
     public void setRole(Role role) {
         this.role = role;
