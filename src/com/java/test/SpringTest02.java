@@ -12,5 +12,8 @@ public class SpringTest02 {
         ApplicationContext applicationContext=  new ClassPathXmlApplicationContext("spring.xml");
         User user3 = applicationContext.getBean("user3", User.class);
         System.out.println(user3.getRole().getName());
+//        内部bean注入
+        User user4 = applicationContext.getBean("user4", User.class);
+        System.out.println(user4.getRole().getName());
     }
 }
