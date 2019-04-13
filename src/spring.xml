@@ -77,7 +77,14 @@
                 </entry>
             </map>
         </property>
+        <property name="address">
+            <props>
+                <prop key="address1" >aaa</prop>
+                <prop key="address2" >bbb</prop>
+            </props>
+        </property>
     </bean>
+
 
 
 </beans>

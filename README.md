@@ -8,3 +8,4 @@ SpringIoC的Bean管理
     e.注入null
     f.级联属性注入 需在bean中new 对象
     g.集合注入
+    h.Properties注入

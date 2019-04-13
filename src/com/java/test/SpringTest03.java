@@ -15,5 +15,6 @@ public class SpringTest03 {
         System.out.println(user8.getEat());
         User user9 = applicationContext.getBean("user9", User.class);
         System.out.println(user9.getMovie());
+        System.out.println(user9.getAddress().getProperty("address1"));
     }
 }

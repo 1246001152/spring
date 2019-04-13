@@ -2,6 +2,7 @@ package com.java.entity;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class User {
@@ -12,6 +13,15 @@ public class User {
     private List<String> love;
     private Set<String> eat;
     private Map<String,String> movie;
+    private Properties address;
+
+    public Properties getAddress() {
+        return address;
+    }
+
+    public void setAddress(Properties address) {
+        this.address = address;
+    }
 
     public Set<String> getEat() {
         return eat;
