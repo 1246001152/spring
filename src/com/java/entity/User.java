@@ -4,7 +4,15 @@ public class User {
     private Integer id;
     private String username;
     private String password;
+    private Role role;
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 
     public Integer getId() {
         return id;

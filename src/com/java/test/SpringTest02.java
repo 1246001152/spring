@@ -4,15 +4,13 @@ import com.java.entity.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SpringTest01 {
+public class SpringTest02 {
 
     public static void main(String[] args) {
 
+        // bean注入
         ApplicationContext applicationContext=  new ClassPathXmlApplicationContext("spring.xml");
-        User user1 = applicationContext.getBean("user", User.class);
-        System.out.println(user1);
-       // ((ClassPathXmlApplicationContext) applicationContext).close();
-        User user2 = applicationContext.getBean("user2", User.class);
-        System.out.println(user2);
+        User user3 = applicationContext.getBean("user3", User.class);
+        System.out.println(user3.getRole().getName());
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="user1" class="com.java.entity.User"
@@ -11,5 +12,17 @@
     </bean>
     <!-- 在Bean定义之外别名Bean   -->
     <alias name="user1" alias="user"/>
+    <bean id="user2" class="com.java.entity.User"
+          p:username="lisi"
+          p:password="222"
+        >
+    </bean>
+
+    <bean id="role" class="com.java.entity.Role" p:name="汪汪"></bean>
+    <bean id="user3" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="role" ref="role"></property>
+    </bean>
+
 
 </beans>
