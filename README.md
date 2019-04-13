@@ -10,3 +10,7 @@ springIOC管理
     lookup-method 进行方法注入
 3.方法替换
     方法替换就是采用<replaced-method name="方法名" replacer="bean的Id"></replaced-method>
+4.bean之间的关系
+    bean的继承
+    bean的依赖 depends-on 创建依赖关系先执行依赖类
+    bean的引用  将bean注入到另一个bean中
