@@ -51,8 +51,14 @@ public class User {
         this.username = username;
         this.password = password;
         this.role = role;
+        System.out.println("有参constructor");
     }
 
     public User() {
+        System.out.println("无参constructor");
+    }
+    // 就是使用这个构造方法进行构造方法自动装配
+    public User(Role role) {
+        this.role = role;
     }
 }
