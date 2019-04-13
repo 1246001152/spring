@@ -1,14 +1,33 @@
 package com.java.entity;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class User {
     private Integer id;
     private String username;
     private String password;
     private Role role = new Role();
-    private List<String> love = new ArrayList<>();
+    private List<String> love;
+    private Set<String> eat;
+    private Map<String,String> movie;
+
+    public Set<String> getEat() {
+        return eat;
+    }
+
+    public void setEat(Set<String> eat) {
+        this.eat = eat;
+    }
+
+    public Map<String, String> getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Map<String, String> movie) {
+        this.movie = movie;
+    }
 
     public List<String> getLove() {
         return love;

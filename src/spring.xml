@@ -54,5 +54,30 @@
             </list>
         </property>
     </bean>
+    <bean id="user8" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="eat" >
+            <set >
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </set>
+        </property>
+    </bean>
+    <bean id="user9" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="movie" >
+            <map>
+                <entry>
+                    <key><value>倚天屠龙记</value></key>
+                    <value>张无忌</value>
+                </entry>
+                <entry>
+                    <key><value>神雕侠</value></key>
+                    <value>杨过</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
 
 </beans>
