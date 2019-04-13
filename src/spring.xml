@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="zhangsan" class="com.java.javacase.Zhangsan"></bean>
-
-    <bean id="lisi" class="com.java.javacase.Lisi"></bean>
-
-    <bean id="javawork" class="com.java.javacase.JavaWork">
-        <property name="tester" ref="zhangsan"></property>
+    <bean id="user" class="com.java.entity.User">
+    </bean>
+    <bean id="user1" class="com.java.entity.User">
+        <property name="id" value="1"></property>
+        <property name="username" value="zhangsan"></property>
+        <property name="password" value="111"></property>
     </bean>
 
 </beans>
