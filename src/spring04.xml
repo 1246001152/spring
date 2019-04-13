@@ -17,7 +17,8 @@
         <property name="username" value="zhangsan"></property>
         <property name="password" value="111"></property>
         <!-- 方法注入 -->
-        <lookup-method name="getRole" bean="role"></lookup-method>
+        <lookup-method name="getRole" bean="role" ></lookup-method>
+        <replaced-method replacer=""></replaced-method>
     </bean>
 
 </beans>

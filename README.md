@@ -7,5 +7,6 @@ springIOC管理
     @Resources按名字，是JDK的，@Autowired按类型，是Sping的。
 2.方法注入
     SpringBean 默认配置是单例的（singleton），可以通过配置scope来 实现多例（prototype）
-
+    lookup-method 进行方法注入
 3.方法替换
+    方法替换就是采用<replaced-method name="方法名" replacer="bean的Id"></replaced-method>
