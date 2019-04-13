@@ -47,4 +47,12 @@ public class User {
         this.username = username;
         this.password = password;
     }
+
+    public void destory() {
+        System.out.println("bean销毁");
+    }
+
+    public void init() {
+        System.out.println("bean初始化");
+    }
 }
