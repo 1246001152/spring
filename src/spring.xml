@@ -2,8 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd"
+        default-autowire="byName">
 
+    <bean id="role" class="com.java.entity.Role">
+        <property name="name" value="管理员"></property>
+    </bean>
+    <bean id="role1" class="com.java.entity.Role">
+        <property name="name" value="经理"></property>
+    </bean>
     <bean id="user" class="com.java.entity.User">
         <property name="id" value="1"></property>
         <property name="username" value="zhangsan"></property>
