@@ -1,10 +1,22 @@
 package com.java.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
     private Integer id;
     private String username;
     private String password;
-    private Role role;
+    private Role role = new Role();
+    private List<String> love = new ArrayList<>();
+
+    public List<String> getLove() {
+        return love;
+    }
+
+    public void setLove(List<String> love) {
+        this.love = love;
+    }
 
     public Role getRole() {
         return role;

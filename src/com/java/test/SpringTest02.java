@@ -18,5 +18,8 @@ public class SpringTest02 {
 //        注入null
         User user5 = applicationContext.getBean("user5", User.class);
         System.out.println(user5.getRole());
+//        级联注入
+        User user6 = applicationContext.getBean("user6", User.class);
+        System.out.println(user6.getRole().getName());
     }
 }

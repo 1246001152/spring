@@ -38,5 +38,21 @@
             <null></null>
         </property>
     </bean>
+    <!-- 级联属性注入 需在bean中new 对象-->
+    <bean id="user6" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="role.name"  value="人事">
+        </property>
+    </bean>
+    <!-- 集合 -->
+    <bean id="user7" class="com.java.entity.User">
+        <property name="username" value="zhangsan"></property>
+        <property name="love" >
+            <list >
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+    </bean>
 
 </beans>
