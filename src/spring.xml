@@ -4,4 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="zhangsan" class="com.java.javacase.Zhangsan"></bean>
+
+    <bean id="lisi" class="com.java.javacase.Lisi"></bean>
+
+    <bean id="javawork" class="com.java.javacase.JavaWork">
+        <property name="tester" ref="zhangsan"></property>
+    </bean>
+
 </beans>
