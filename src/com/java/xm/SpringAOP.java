@@ -29,9 +29,9 @@ public class SpringAOP {
 
     @Around("execution(* com.java.xm.service.UserService.add(..))")
     public void around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        System.out.println("环绕通知前");
+        System.out.println("环绕通知前0");
         proceedingJoinPoint.proceed();
-        System.out.println("环绕通知后");
+        System.out.println("环绕通知后1");
     }
 
 
